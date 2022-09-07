@@ -1,4 +1,4 @@
-import { IOptions } from "../types/options-type";
+import { IOptions } from "../types";
 
 export const options: IOptions[] = [
   {

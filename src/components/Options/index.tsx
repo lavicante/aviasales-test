@@ -1,9 +1,8 @@
 import { OptionsProps } from "./OptionsProps";
 import { useState } from "react";
-import { IOptions } from "../../types/options-type";
+import { IOptions } from "../../types";
 import classes from "./Options.module.scss";
 import { Typography } from "../../UI/Typography";
-import clns from "classnames";
 
 export const Options = ({ options, title }: OptionsProps) => {
   const [ticketsOptions, setTicketsOptions] = useState<IOptions[]>(options);
@@ -15,15 +14,15 @@ export const Options = ({ options, title }: OptionsProps) => {
     setTicketsOptions(updateOptions);
   };
 
-  console.log(ticketsOptions);
-
   const renderOptions = (ticketsOptions: IOptions[]) => {
     return ticketsOptions.map((opt) => {
       return (
         <div key={opt.id} className={classes.formGroup}>
           <input type="checkbox" id={opt.name} />
           <label htmlFor={opt.name} onClick={() => handleChecked(opt.id)}>
-            <Typography variant={"span"}>{opt.label}</Typography>
+            <Typography variant={"span"} color="dark">
+              {opt.label}
+            </Typography>
           </label>
         </div>
       );

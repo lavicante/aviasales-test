@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout } from "./components/Layout";
+import { Tiket } from "./components/Tiket";
+import { tikets } from "./mocks/tikets";
 
 function App() {
   return (
     <Layout>
-      <div>111</div>
+      <Tiket tickets={tikets} />
     </Layout>
   );
 }

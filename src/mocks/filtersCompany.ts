@@ -1,11 +1,11 @@
-import { IOptions } from "../types/options-type";
+import { IOptions } from "../types";
 
 export const filtersCompany: IOptions[] = [
   {
     id: 1,
     name: "all",
     label: "Все",
-    checked: false,
+    checked: true,
   },
   {
     id: 2,

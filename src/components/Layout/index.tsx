@@ -6,6 +6,9 @@ import { options } from "../../mocks/options";
 import { TITLE_FILTER_COMPANY, TITLE_OPTIONS } from "../../mocks/constants";
 import { CompanyFilter } from "../CompanyFilter";
 import { filtersCompany } from "../../mocks/filtersCompany";
+import { Sorts } from "../Sorts";
+import { sorts } from "../../mocks/sorts";
+import { LoadMoreButton } from "../LoadMoreButton";
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
@@ -22,8 +25,9 @@ export const Layout = ({ children }: LayoutProps) => {
           />
         </aside>
         <div className={classes.wrapper}>
-          <section>tabs</section>
-          <section>tickets</section>
+          <Sorts sorts={sorts} />
+          {children}
+          <LoadMoreButton />
         </div>
       </main>
     </div>

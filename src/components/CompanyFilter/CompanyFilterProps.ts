@@ -1,4 +1,4 @@
-import { IFiltersTypes } from "../../types/options-type";
+import { IFiltersTypes } from "../../types";
 
 export interface CompanyFilterProps {
   filters: IFiltersTypes[];
