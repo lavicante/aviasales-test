@@ -1,0 +1,21 @@
+.root{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.logo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 17px 0 35px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.wrapper{
+  padding-bottom: 20px;
+}

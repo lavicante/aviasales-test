@@ -1,0 +1,28 @@
+.root{
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #DFE5EC;
+}
+
+.item{
+  padding: 15px;
+  background-color: #FFFFFF;
+  transition: background-color, color .3s ease-in-out;
+
+  &.active{
+    background: #2196F3;
+    color: #FFFFFF;
+
+    &:hover{
+      background-color: #2196F3;
+    }
+  }
+
+  &:hover{
+    cursor: pointer;
+    background-color: #F1FCFF;
+  }
+}
