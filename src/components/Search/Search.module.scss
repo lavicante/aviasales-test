@@ -1,0 +1,18 @@
+.root{
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #DADADA;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formGroup{
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

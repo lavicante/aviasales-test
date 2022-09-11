@@ -1,0 +1,30 @@
+.root{
+  display: flex;
+}
+
+.datePickerInput{
+  max-width: 187px;
+  margin-right: 2px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+
+  color: #9EA9B7;
+
+  background-image: url('./assets/date-icon.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 20px right 20px;
+  background-size: 20px;
+}
+
+.borderRadius{
+  border-radius: 0 5px 5px 0;
+}
