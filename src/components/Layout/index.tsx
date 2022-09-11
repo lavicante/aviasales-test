@@ -9,6 +9,7 @@ import { filtersCompany } from "../../mocks/filtersCompany";
 import { Sorts } from "../Sorts";
 import { sorts } from "../../mocks/sorts";
 import { LoadMoreButton } from "../LoadMoreButton";
+import { Search } from "../Search";
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
@@ -16,6 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <header className={classes.logo}>
         <Logo />
       </header>
+      <Search />
       <main className={classes.main}>
         <aside className={classes.aside}>
           <Options options={options} title={TITLE_OPTIONS} />
